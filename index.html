@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudcast - Advanced Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-cloud-sun"></i> Cloudcast</h1>
+            <p>Your advanced weather companion</p>
+        </header>
+
+        <div class="card">
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" placeholder="Enter city name" spellcheck="false">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                    <button class="location-btn"><i class="fas fa-location-arrow"></i></button>
+                </div>
+                <div class="error">
+                    <p><i class="fas fa-exclamation-circle"></i> Please enter a valid city name</p>
+                </div>
+            </div>
+
+            <div class="weather">
+                <div class="current-weather">
+                    <div class="weather-main">
+                        <img src="images/clear.png" class="weather-icon">
+                        <div class="temperature-container">
+                            <h1 class="temp">22°C</h1>
+                            <h2 class="city">New York</h2>
+                            <p class="weather-description">Sunny</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <img src="images/humidity.png" alt="Humidity">
+                            </div>
+                            <div class="detail-info">
+                                <p class="detail-value humidity">50%</p>
+                                <p class="detail-label">Humidity</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <img src="images/wind.png" alt="Wind">
+                            </div>
+                            <div class="detail-info">
+                                <p class="detail-value wind">15 km/h</p>
+                                <p class="detail-label">Wind Speed</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-temperature-low"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p class="detail-value feels-like">24°C</p>
+                                <p class="detail-label">Feels Like</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="detail-info">
+                                <p class="detail-value pressure">1013 hPa</p>
+                                <p class="detail-label">Pressure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast">
+                    <h3><i class="fas fa-calendar-alt"></i> 5-Day Forecast</h3>
+                    <div class="forecast-container">
+                        <!-- Forecast items will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            <p>Powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
